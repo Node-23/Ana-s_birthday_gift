@@ -8,6 +8,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.rubick.sunflower.R;
+import com.rubick.sunflower.Service.APIUrls;
 import com.rubick.sunflower.Service.ServerActions;
 import com.rubick.sunflower.Service.buttonPhrases;
 
@@ -32,8 +33,14 @@ public class Home extends AppCompatActivity {
         bottomButton = findViewById(R.id.bottomButton);
 
         topButton.setOnClickListener(v -> {
-            ServerActions.GetRequest("https://api.adviceslip.com/advice", this);
-            Intent inspiration = new Intent(this, com.rubick.sunflower.View.Inspiration.class);
+            ServerActions.GetRequest(APIUrls.AdviceAPI, this);
+            Intent inspiration = new Intent(this, Inspiration.class);
+            startActivity(inspiration);
+        });
+
+        bottomButton.setOnClickListener(v -> {
+            ServerActions.GetRequest(APIUrls.CatAPI, this);
+            Intent inspiration = new Intent(this, Inspiration.class);
             startActivity(inspiration);
         });
     }
