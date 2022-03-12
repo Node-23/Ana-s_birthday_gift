@@ -1,5 +1,6 @@
 package com.rubick.sunflower.View;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -7,6 +8,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.rubick.sunflower.R;
+import com.rubick.sunflower.Service.ServerActions;
 import com.rubick.sunflower.Service.buttonPhrases;
 
 import java.util.Random;
@@ -28,6 +30,12 @@ public class Home extends AppCompatActivity {
     private void setItems(){
         topButton = findViewById(R.id.topButton);
         bottomButton = findViewById(R.id.bottomButton);
+
+        topButton.setOnClickListener(v -> {
+            ServerActions.GetRequest("https://api.adviceslip.com/advice", this);
+            Intent inspiration = new Intent(this, com.rubick.sunflower.View.Inspiration.class);
+            startActivity(inspiration);
+        });
     }
 
     private void setButtonsText(){

@@ -20,6 +20,7 @@
         android:layout_height="80dp"/>
 
     <TextView
+        android:id="@+id/inspirationText"
         android:textSize="30sp"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
