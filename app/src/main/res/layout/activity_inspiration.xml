@@ -7,9 +7,12 @@
     tools:context=".View.Inspiration">
 
     <ImageView
-        android:src="@drawable/default_image"
+        android:id="@+id/inspirationBackground"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_image"
         tools:ignore="ContentDescription" />
 
     <ImageView
