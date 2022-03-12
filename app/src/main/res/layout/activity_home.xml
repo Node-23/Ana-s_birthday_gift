@@ -15,18 +15,19 @@
         tools:ignore="MissingConstraints" />
 
     <Button
+        android:id="@+id/topButton"
         android:alpha="0.6"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:backgroundTint="#14b9a7"
-        android:text="Sentindo-se com sorte?"
         android:textStyle="italic"
         android:typeface="normal"
         app:cornerRadius="100dp"
         tools:visibility="visible" />
 
     <Button
+        android:id="@+id/bottomButton"
         android:alpha="0.6"
         android:textStyle="italic"
         android:layout_marginTop="70dp"
@@ -35,7 +36,6 @@
         android:backgroundTint="#14b9a7"
         android:layout_gravity="center"
         app:cornerRadius="100dp"
-        android:text="Tô meio deprê"
         />
 
     <TextView
