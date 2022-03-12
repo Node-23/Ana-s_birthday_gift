@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Home">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="1.5"
+        android:scaleY="3"
+        android:src="@drawable/peaceful_1"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:alpha="0.6"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#14b9a7"
+        android:text="Sentindo-se com sorte?"
+        android:textStyle="italic"
+        android:typeface="normal"
+        app:cornerRadius="100dp"
+        tools:visibility="visible" />
+
+    <Button
+        android:alpha="0.6"
+        android:textStyle="italic"
+        android:layout_marginTop="70dp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#14b9a7"
+        android:layout_gravity="center"
+        app:cornerRadius="100dp"
+        android:text="Tô meio deprê"
+        />
+
+    <TextView
+        android:alpha="0.6"
+        android:layout_marginTop="160dp"
+        android:textStyle="italic"
+        android:textColor="#f8f8ff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:text="Naaahhh, estou normal"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:alpha="0.3"
+        android:textStyle="italic"
+        android:textColor="#f8f8ff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="30dp"
+        android:text="Mana™"
+        android:textSize="40sp"
+        />
+
+</FrameLayout>
