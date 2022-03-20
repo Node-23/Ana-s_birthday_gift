@@ -32,11 +32,11 @@ public class Home extends AppCompatActivity {
         topButton = findViewById(R.id.topButton);
         bottomButton = findViewById(R.id.bottomButton);
 
-        topButton.setOnClickListener(v -> {
-            ServerActions.GetRequest(APIUrls.AdviceAPI, this);
-            Intent inspiration = new Intent(this, Inspiration.class);
-            startActivity(inspiration);
-        });
+//       bottomButton topButton.setOnClickListener(v -> {
+//            ServerActions.GetRequest(APIUrls.AdviceAPI, this);
+//            Intent inspiration = new Intent(this, Inspiration.class);
+//            startActivity(inspiration);
+//        });
 
         bottomButton.setOnClickListener(v -> {
             ServerActions.GetRequest(APIUrls.CatAPI, this);

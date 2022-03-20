@@ -3,11 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/mathe/AndroidStudioProjects/SunFlower/app/src/main/res/drawable/load_anim.xml" value="0.2703125" />
+        <entry key="..\:/Users/mathe/AndroidStudioProjects/SunFlower/app/src/main/res/drawable/progressbar_animation.xml" value="0.2703125" />
         <entry key="..\:/Users/mathe/AndroidStudioProjects/SunFlower/app/src/main/res/drawable/ui_rectangle_canva.xml" value="0.2703125" />
         <entry key="..\:/Users/mathe/AndroidStudioProjects/SunFlower/app/src/main/res/drawable/ui_square_canva.xml" value="0.2703125" />
         <entry key="..\:/Users/mathe/AndroidStudioProjects/SunFlower/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/mathe/AndroidStudioProjects/SunFlower/app/src/main/res/layout/activity_inspiration.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/mathe/AndroidStudioProjects/SunFlower/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mathe/AndroidStudioProjects/SunFlower/app/src/main/res/layout/load_spinner.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
