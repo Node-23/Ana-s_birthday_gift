@@ -1,5 +1,7 @@
 package com.rubick.sunflower.Service;
 
+import android.os.AsyncTask;
+
 import com.google.gson.Gson;
 
 public class APIParser {

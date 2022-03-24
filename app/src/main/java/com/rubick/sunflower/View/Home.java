@@ -2,16 +2,21 @@ package com.rubick.sunflower.View;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.WindowManager;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.rubick.sunflower.Model.Header;
 import com.rubick.sunflower.R;
 import com.rubick.sunflower.Service.APIUrls;
+import com.rubick.sunflower.Service.RapidApiHeaders;
 import com.rubick.sunflower.Service.ServerActions;
 import com.rubick.sunflower.Service.buttonPhrases;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class Home extends AppCompatActivity {
@@ -32,14 +37,16 @@ public class Home extends AppCompatActivity {
         topButton = findViewById(R.id.topButton);
         bottomButton = findViewById(R.id.bottomButton);
 
-//       bottomButton topButton.setOnClickListener(v -> {
-//            ServerActions.GetRequest(APIUrls.AdviceAPI, this);
-//            Intent inspiration = new Intent(this, Inspiration.class);
-//            startActivity(inspiration);
-//        });
+        topButton.setOnClickListener(v -> {
+            List<Header> headers = new ArrayList<>();
+            headers.add(RapidApiHeaders.RandomQuoteAPI);
+            headers.add(RapidApiHeaders.Key);
+            ServerActions.GetRequestWithHeaders(APIUrls.RandomQuoteAPI, this, headers);
+
+        });
 
         bottomButton.setOnClickListener(v -> {
-            ServerActions.GetRequest(APIUrls.CatAPI, this);
+            ServerActions.GetRequest(APIUrls.DogAPI, this);
             Intent inspiration = new Intent(this, Inspiration.class);
             startActivity(inspiration);
         });
